@@ -1,0 +1,54 @@
+@import '~quill/dist/quill.core.css';
+@import '~quill/dist/quill.snow.css';
+
+$body-color: black;
+$darker: rgba(0,0,0,0.1);
+
+$btn-valid-bgcolor: #24dd49;
+$btn-remove-bgcolor: #bab4bb;
+$btn-remove-bgcolor-hover: #FF6347;
+$btn-default-bgcolor: #3366BB;
+$btn-disabled-bgcolor: #939393;
+
+$btn-color: #FFFFFF;
+$btn-color-disabled: #939393;
+
+$btn-opacity-disabled: 0.5;
+$btn-opacity-transparent-disabled: 0;
+
+$ease: all 0.3s ease 0s;
+
+.rd-button{
+    border: none;
+    transition: $ease;
+
+    &:hover:enabled {
+        cursor:pointer;
+    }
+
+    &:focus {
+        outline: 0;
+    }
+
+    &:disabled {
+        opacity: $btn-opacity-disabled;
+        color: $btn-color-disabled;
+    }
+}
+
+body {
+    color: $body-color;
+}
+
+
+.block-control-remove {
+    background-color: $btn-remove-bgcolor;
+    color: $btn-color-disabled;
+
+    &:hover:enabled {
+        background-color: $btn-remove-bgcolor-hover;
+        color: $btn-color;
+    }
+}
+
+@import '../scripts/rd-image/rd-image.scss';

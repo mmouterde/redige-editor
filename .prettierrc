@@ -1,0 +1,33 @@
+{
+    "useTabs": false,
+    "printWidth": 120,
+    "tabWidth": 4,
+    "singleQuote": true,
+    "trailingComma": "all",
+    "semi": true,
+    "overrides": [
+        {
+            "files": ["*.yml", ".*.yml"],
+            "options": {
+                "tabWidth": 2
+            }
+        },
+        {
+            "files": "*.md",
+            "options": {
+                "proseWrap": "preserve"
+            }
+        },
+        {
+            "files": "package.json",
+            "options": {
+                "tabWidth": 2
+            }
+        }{
+            "files": "package-lock.json",
+            "options": {
+                "tabWidth": 2
+            }
+        }
+    ]
+}

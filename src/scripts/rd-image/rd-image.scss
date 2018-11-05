@@ -1,0 +1,30 @@
+.rd-image {
+    display: block;
+    text-align: center;
+    & .image-wrapper:hover {
+        background-color: $darker;
+    }
+    & > .image-wrapper {
+        display: inline-block;
+        margin: 25px;
+        align-self: center;
+        position: relative;
+        border: 1px solid $darker;
+
+        & > img {
+            max-width: 95%;
+            max-height: 400px;
+            padding: 18px;
+        }
+
+        & > .block-control {
+            position: absolute;
+            top: -1px;
+            right: -1px;
+        }
+
+        &:not(:hover) > .block-control {
+            display: none;
+        }
+    }
+}
